@@ -5,193 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
   
 }
-/*------ CSS User----*/
-.datosUser{
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(100%, 1%);
-    background: rgba(0,0,0,.5);
-    box-sizing: border-box;
-    /* box-shadow: 0 15px 25px rgba(0,0,0,.6); */
-}
-.datosUser h2{
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-}
-.datosUser .userBox{
-    position: relative;
-}
-.datosUser .userBox input{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-.datosUser .userBox label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-.datosUser .userBox input:focus ~ label,
-.datosUser .userBox input:valid ~ label{
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
-}
-.datosUser form a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
-}
-.datosUser a:hover{
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
-}
-.datosUser a span{
-    position: absolute;
-    display: block;
-}
-.datosUser a span:nth-child(1){
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btn-anim1 1s linear infinite;
-}
-@keyframes btn-anim1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
-.datosUser a span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s;
-}
-@keyframes btn-anim2 {
-    0%{
-        top:-100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
-}
-.datosUser a span:nth-child(3){
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s;
-}
-@keyframes btn-anim3 {
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
-}
-.datosUser a span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .75s;
-}
-@keyframes btn-anim2 {
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
-}
-/*-----------------*/
-.titulo{
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    background-color: #2688a9;
+h1{
+    background: rgba(58, 100, 142, 0.814);
     color: white;
-}
-
-.subTitulo{
-    margin: 5px;
-    padding: 5px;
     text-align: center;
-    border-bottom: 3px dotted rgba(7, 102, 197, 0.863);
 }
-.conteinerUser{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin: 5px;
-    gap: 5px;
-}
-
-
-.cardServicios{
-    display: flex;
-    border: 1px solid #aaa;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 5px;
-}
-
-.card div{
-    text-align: center;
-    padding: 5px;
-    
-}
-.btn{
-    padding: 5px;
-    color: white;
-    background-color: #098fbbd8;
-    border: none;
-}
-
 .imagen{
     width: 200px;
     height: 150px;
@@ -199,13 +17,40 @@
     margin: 10px;
 }
 
-.separador{
-    height: 10px;
+.containerServicios{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    width: 30%;
+}
+.card{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: 50%;
 }
 
-.carro{
-    border: 1px solid #000;
-    margin: 50px;
-    padding: 15px;
-    background-color: #eee;
+button{
+    background: rgb(11, 60, 133);
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+
+.titleCart{
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.carritoCart{
+    margin: 5px;
+    padding: 5px;
+    background-color: #aaa;
 }

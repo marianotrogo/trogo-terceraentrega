@@ -9,68 +9,21 @@
     <title>Tercera Entrega JS</title>
 </head>
 <body>
-    <h1 class="titulo">Simulador de Suscripciones</h1>
-    <h3 class="subTitulo">Servicios</h3>
-    <div class="datosUser">
-        <h2>Datos para la Suscripcion</h2>
-        <form action="">
-            <div class="userBox">
-                <input type="text" name="" id="" required="">
-                <label for="">Nombre Completo</label>
-            </div>
-            <div class="userBox">
-                <input type="text" name="" id="" required>
-                <label for="">Cuit o DNI</label>
-            </div>
-            <div><input type="checkbox" name="" id="">Guardar Datos</div>
-            <a href="#" class="btnDatos">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Listo
-            </a>
-        </form>
-    </div>
-    <div class="container" id="container">
-        <!-- <div class="cardServicios">
-            <img src="./img/netflix.png" alt="" class="imagen">
-            <h5>Netflix</h5>
-            <p>$ 1000</p>
-            <button type="submit" class="btn" id="btnAgregar">Agregar al Carrito</button>
-        </div>
-        <div class="cardServicios">
-            <img src="./img/primeVideo.jfif" alt="" class="imagen">
-            <h5>Prime Video</h5>
-            <p>$ 300</p>
-            <button type="submit" class="btn" id="btnAgregar">Agregar al Carrito</button>
-        </div>
-        <div class="cardServicios">
-            <img src="./img/hboGo.png" alt="" class="imagen">
-            <h5>Hbo Go</h5>
-            <p>$ 500</p>
-            <button type="submit" class="btn" id="btnAgregar">Agregar al Carrito</button>
-        </div>
-        <div class="cardServicios">
-            <img src="./img/psnNow.png" alt="" class="imagen">
-            <h5>Psn Now</h5>
-            <p>$ 2000</p>
-            <button type="submit" class="btn" id="btnAgregar">Agregar al Carrito</button>
-        </div>
-        <div class="cardServicios">
-            <img src="./img/youtube.jfif" alt="" class="imagen">
-            <h5>Youtube Premium</h5>
-            <p>$ 250</p>
-            <button type="submit" class="btn" id="btnAgregar">Agregar al Carrito</button>
-        </div> -->
-       
-        </div>
-    <div class="separador"></div>
-    <div class="carro">
-        <div id="itemCarro"></div>
-        <div id="precioCarro"></div>
-    </div>
+   
+    <h1>Simulador de Suscripciones</h1>
+    <div id="containerServicios"></div>
+
+    <h2 class="titleCart">Carrito</h2>
+    <h5 class="titleCart">Total: <span id="total"></span></h5>
+    <button id="pintarCarrito">Carro <i class="fa-solid fa-cart-shopping"></i></button>
+    <button id="eliminarCarro">Eliminar Carro <i class="fa-solid fa-trash-can-xmark"></i></button>
+    <div class="carritoContainer" id="carritoContainer"></div>
+
+
+
+    <script src="https://kit.fontawesome.com/7fb0acaf0b.js" crossorigin="anonymous"></script>
     <script src="./js/serv.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
+
